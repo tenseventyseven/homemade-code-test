@@ -13,7 +13,6 @@
   "author": "James U",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "husky": "^9.0.11"
+    "concurrently": "^8.2.2"
   }
 }

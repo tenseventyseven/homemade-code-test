@@ -5,12 +5,12 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "prepare": "cd .. && husky install backend/.husky",
     "build": "tsc --build",
     "dev": "tsx watch src/index.ts",
     "test": "mocha --import=tsx 'test/**/*.test.ts' --exit",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prepare": "cd .. && husky install backend/.husky"
   },
   "keywords": [],
   "author": "James U",
@@ -37,7 +37,8 @@
     "sinon": "^18.0.0",
     "supertest": "^7.0.0",
     "tsx": "^4.11.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "husky": "^8.0.0"
   },
   "lint-staged": {
     "src/**/*.ts": [
